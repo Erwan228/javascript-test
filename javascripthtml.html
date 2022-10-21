@@ -1,0 +1,23 @@
+<style>
+* {
+    color: yellow;
+    background-color: black;
+}
+.blue {
+    color: #d8f0fc;
+}
+</style>
+<div id="name">Erwan</div>
+<button onclick="revealName()">
+    Reveal true name
+</button>
+<p>refresh siden for å resette funksjonen</p>
+
+
+
+
+<script>
+function revealName() {
+    document.getElementById('name').innerHTML='<div class="blue">Music Rioulu</div>'
+}
+</script>
