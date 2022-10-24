@@ -6,18 +6,35 @@
 .blue {
     color: #d8f0fc;
 }
+.orange {
+    color: #ac520f;
+}
 </style>
-<div id="name">Erwan</div>
-<button onclick="revealName()">
-    Reveal true name
+<div id="name1">Erwan</div>
+<button style="background-color: grey; border: solid 2px white;" onclick="revealName1()">
+    Reveal Erwans true name
 </button>
-<p>refresh siden for å resette funksjonen</p>
+<div id="name2">Sindre</div>
+<button style="background-color: plum; border: solid 2px white;" onclick="revealName2()">
+    Reveal Sindres true name
+</button>
+<div><button style="background-color: rgb(72, 97, 96); border: solid 2px white;" onclick="reset()">
+    RESET
+</button>
+</div>
 
 
 
 
 <script>
-function revealName() {
-    document.getElementById('name').innerHTML='<div class="blue">Music Rioulu</div>'
+function revealName1() {
+    document.getElementById('name1').innerHTML='<div class="blue">Music Rioulu</div>';
+}
+function revealName2() {
+    document.getElementById('name2').innerHTML='<div class="orange">Silver Fox</div>';
+}
+function reset() {
+    document.getElementById('name1').innerHTML='Erwan';
+    document.getElementById('name2').innerHTML='Sindre'
 }
 </script>
